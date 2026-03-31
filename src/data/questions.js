@@ -402,7 +402,84 @@ export const questions = [
   { id: 387, category: 'lidske_telo',  question: 'Co jsou to bílé krvinky?', options: ["Buňky přenášející kyslík","Buňky bránící tělo před infekcemi","Buňky zodpovědné za srážení krve","Buňky produkující hormony"], correct: 1 },
   { id: 388, category: 'lidske_telo',  question: 'Jak se nazývá orgán, který produkuje žluč?', options: ["Slinivka","Ledviny","Játra","Žaludek"], correct: 2 },
   { id: 389, category: 'lidske_telo',  question: 'Co je to DNA a kde se v těle nachází?', options: ["Druh bílkoviny v krvi","Nositelka genetické informace v buněčném jádře","Typ hormonu v mozku","Enzym v trávicím traktu"], correct: 1 },
-  { id: 390, category: 'lidske_telo',  question: 'Jak se nazývá největší sval v lidském těle?', options: ["Biceps","Deltový sval","Velký hýžďový sval","Stehenní čtyřhlavý sval"], correct: 2 }
+  { id: 390, category: 'lidske_telo',  question: 'Jak se nazývá největší sval v lidském těle?', options: ["Biceps","Deltový sval","Velký hýžďový sval","Stehenní čtyřhlavý sval"], correct: 2 },
+
+  // --- matematika ---
+  { id: 391, category: 'matematika',   question: 'Jaký je výsledek: log₁₀(1000)?', options: ["2","3","10","100"], correct: 1 },
+  { id: 392, category: 'matematika',   question: 'Jak se nazývá číslo, které nelze vyjádřit jako podíl dvou celých čísel?', options: ["Přirozené číslo","Celé číslo","Iracionální číslo","Racionální číslo"], correct: 2 },
+  { id: 393, category: 'matematika',   question: 'Kolik je goniometrická funkce sin(90°)?', options: ["0","0,5","1","√2/2"], correct: 2 },
+  { id: 394, category: 'matematika',   question: 'Jaký je obvod kružnice s poloměrem 5 cm?', options: ["10π cm","5π cm","25π cm","10 cm"], correct: 0 },
+  { id: 395, category: 'matematika',   question: 'Co vyjadřuje Pythagorova věta?', options: ["Součet úhlů trojúhelníku je 180°","V pravoúhlém trojúhelníku platí a²+b²=c²","Obsah trojúhelníku je a×v/2","Součet stran trojúhelníku se rovná obvodu"], correct: 1 },
+
+  // --- cestina ---
+  { id: 396, category: 'cestina',      question: 'Jak se nazývá jazykový prostředek, kdy se jeden jev přímo přirovnává k jinému pomocí „jako"?', options: ["Metafora","Přirovnání","Personifikace","Hyperbola"], correct: 1 },
+  { id: 397, category: 'cestina',      question: 'Který český spisovatel napsal román „Na trati"?', options: ["Alois Jirásek","Jindřich Šimon Baar","Josef Václav Sládek","Zikmund Winter"], correct: 1 },
+  { id: 398, category: 'cestina',      question: 'Jak se nazývá věta, která je součástí souvětí a závisí na větě řídící?', options: ["Věta hlavní","Věta vedlejší","Věta jednočlenná","Věta holá"], correct: 1 },
+  { id: 399, category: 'cestina',      question: 'Které dílo napsal Karel Čapek?', options: ["Maryša","R.U.R.","Naše paní Bursíková","Lucerna"], correct: 1 },
+  { id: 400, category: 'cestina',      question: 'Jak se nazývá slovo odvozené od základního slova příponou nebo předponou?', options: ["Složenina","Zkratka","Odvozenina","Přejímka"], correct: 2 },
+
+  // --- zahradkareni ---
+  { id: 401, category: 'zahradkareni', question: 'Jak se nazývá postup, kdy se odstraňují postranní výhonky rajčat v paždí listů?', options: ["Zaštipování","Vylamování zálistků","Mulčování","Přihnojování"], correct: 1 },
+  { id: 402, category: 'zahradkareni', question: 'Co je to pH půdy a jaká hodnota je neutrální?', options: ["Obsah živin, neutrální je 0","Kyselost půdy, neutrální je 7","Vlhkost půdy, neutrální je 50 %","Teplota půdy, neutrální je 20 °C"], correct: 1 },
+  { id: 403, category: 'zahradkareni', question: 'Která zelenina je dvouletá – v prvním roce tvoří kořen, ve druhém semena?', options: ["Rajče","Mrkev","Okurka","Tykev"], correct: 1 },
+  { id: 404, category: 'zahradkareni', question: 'Co znamená, že rostlina je „mrazuvzdorná do −15 °C"?', options: ["Přežije krátké mrazy do −15 °C bez poškození","Roste pouze při −15 °C","Vyžaduje zalévání při −15 °C","Klíčí až při −15 °C"], correct: 0 },
+  { id: 405, category: 'zahradkareni', question: 'Jak se nazývá technika zakrývání půdy materiálem (slámou, kůrou) k udržení vlhkosti?', options: ["Kompostování","Mulčování","Rytí","Přesazování"], correct: 1 },
+
+  // --- zvirata ---
+  { id: 406, category: 'zvirata',      question: 'Jak se nazývá proces, kdy hmyz prochází stadii vajíčko–larva–kukla–dospělec?', options: ["Metamorfóza","Hibernace","Migrace","Regenerace"], correct: 0 },
+  { id: 407, category: 'zvirata',      question: 'Který z těchto živočichů je studenokrevný?', options: ["Pes","Delfín","Ještěrka","Slon"], correct: 2 },
+  { id: 408, category: 'zvirata',      question: 'Jak se nazývá samec ovce?', options: ["Kanec","Beran","Býk","Kozel"], correct: 1 },
+  { id: 409, category: 'zvirata',      question: 'Který pták je znám tím, že nosí vejce do jiných hnízd?', options: ["Vlaštovka","Kukačka","Sýkora","Straka"], correct: 1 },
+  { id: 410, category: 'zvirata',      question: 'Co je to ekholokace a který savec ji používá?', options: ["Navigace pomocí magnetického pole – holub","Navigace zvukovými vlnami – netopýr","Navigace čichem – pes","Navigace zrakem – orel"], correct: 1 },
+
+  // --- rostliny ---
+  { id: 411, category: 'rostliny',     question: 'Jak se nazývá rostlina, která žije pouze jeden rok?', options: ["Vytrvalá","Dvouletá","Jednoletá","Dřevina"], correct: 2 },
+  { id: 412, category: 'rostliny',     question: 'Co je to opylení?', options: ["Zalévání rostlin prachem","Přenos pylu na bliznu, umožňující oplodnění","Rozmnožování stélnatých rostlin","Odumírání listů na podzim"], correct: 1 },
+  { id: 413, category: 'rostliny',     question: 'Který strom je symbolem České republiky a národním stromem?', options: ["Smrk ztepilý","Dub letní","Lípa srdčitá","Borovice lesní"], correct: 2 },
+  { id: 414, category: 'rostliny',     question: 'Jak se nazývá podzemní zásobní orgán tulipánu?', options: ["Hlíza","Cibule","Oddenek","Kořen"], correct: 1 },
+  { id: 415, category: 'rostliny',     question: 'Co je to lichořeřišnice ve vztahu k zahradě?', options: ["Plevel","Jedovatá rostlina","Jedlá okrasná bylina","Léčivá dřevina"], correct: 2 },
+
+  // --- ceske_zvyky ---
+  { id: 416, category: 'ceske_zvyky',  question: 'Co se tradičně pouští po vodě na sv. Barboru (4. prosince)?', options: ["Lodičky se svíčkou","Větve třešně do vázy","Věnce ze slámy","Papírové lampióny"], correct: 1 },
+  { id: 417, category: 'ceske_zvyky',  question: 'Jak se jmenuje postava ošklivého tvora, který v Česku doprovází Mikuláše?', options: ["Perchta","Čert","Rarášek","Hastrman"], correct: 1 },
+  { id: 418, category: 'ceske_zvyky',  question: 'Co je tradiční český zvyk „koleda"?', options: ["Taneční slavnost o letním slunovratu","Obchůzka s písněmi a přáním, za které se dostává odměna","Obřad pálení slámy na polích","Průvod masek v zimě"], correct: 1 },
+  { id: 419, category: 'ceske_zvyky',  question: 'Co symbolizuje mazanec pečený na Velikonoce?', options: ["Plodnost a bohatství úrody","Tělo Kristovo – symbol vzkříšení","Příchod jara a tepla","Ochranu domu před čarodějnicemi"], correct: 1 },
+  { id: 420, category: 'ceske_zvyky',  question: 'Kdy se v Čechách slaví svátek „Dušiček"?', options: ["31. října","1. listopadu","2. listopadu","11. listopadu"], correct: 2 },
+
+  // --- veda ---
+  { id: 421, category: 'veda',         question: 'Co popisuje Newtonův druhý zákon pohybu?', options: ["Každá akce má rovnou a opačnou reakci","Síla se rovná hmotnosti krát zrychlení (F=ma)","Těleso setrvává v klidu, není-li působena síla","Energie se nemůže ztratit, jen přeměnit"], correct: 1 },
+  { id: 422, category: 'veda',         question: 'Jaké záření má nejvyšší frekvenci?', options: ["Rádiové vlny","Viditelné světlo","Rentgenové záření","Gama záření"], correct: 3 },
+  { id: 423, category: 'veda',         question: 'Co je to osmóza?', options: ["Chemická reakce kyseliny se zásadou","Průnik rozpouštědla přes polopropustnou membránu","Přeměna pevné látky na plyn","Pohyb iontů v elektrickém poli"], correct: 1 },
+  { id: 424, category: 'veda',         question: 'Který plyn tvoří největší podíl atmosféry Země?', options: ["Kyslík","Oxid uhličitý","Dusík","Argon"], correct: 2 },
+  { id: 425, category: 'veda',         question: 'Co studuje obor genetika?', options: ["Stavbu a funkci nervového systému","Dědičnost a proměnlivost organismů","Pohyb planet a hvězd","Chemické složení hornin"], correct: 1 },
+
+  // --- technologie ---
+  { id: 426, category: 'technologie',  question: 'Co je to binární soustava?', options: ["Soustava o základu 10","Soustava o základu 2 (0 a 1)","Soustava o základu 16","Systém pro kódování textu"], correct: 1 },
+  { id: 427, category: 'technologie',  question: 'Jak se nazývá paměť počítače, do které lze zapisovat i číst, ale při vypnutí se vymaže?', options: ["ROM","SSD","RAM","HDD"], correct: 2 },
+  { id: 428, category: 'technologie',  question: 'Co je to protokol HTTP?', options: ["Antivirový program","Pravidla pro přenos dat na webu","Typ operačního systému","Hardware pro síťové připojení"], correct: 1 },
+  { id: 429, category: 'technologie',  question: 'Co znamená zkratka „GPS"?', options: ["General Positioning System","Global Positioning System","Geographic Proximity Sensor","Ground Placement Service"], correct: 1 },
+  { id: 430, category: 'technologie',  question: 'Jak se nazývá jazyk pro popis struktury webových stránek?', options: ["CSS","JavaScript","HTML","Python"], correct: 2 },
+
+  // --- filmy ---
+  { id: 431, category: 'filmy',        question: 'Který český film režíroval Miloš Forman a získal Oscara za nejlepší film v roce 1975?', options: ["Amadeus","Přelet nad kukaččím hnízdem","Vlasy","Ragtime"], correct: 1 },
+  { id: 432, category: 'filmy',        question: 'Jak se jmenuje špión s krycím číslem 007?', options: ["Jason Bourne","Ethan Hunt","James Bond","Jack Bauer"], correct: 2 },
+  { id: 433, category: 'filmy',        question: 'Kdo režíroval filmovou trilogii „Pán prstenů"?', options: ["Peter Jackson","Steven Spielberg","Ridley Scott","George Lucas"], correct: 0 },
+  { id: 434, category: 'filmy',        question: 'Ve kterém roce byl natočen první film v historii kinematografie (bratři Lumièrové)?', options: ["1885","1895","1905","1915"], correct: 1 },
+  { id: 435, category: 'filmy',        question: 'Jak se jmenuje animátorské studio, které vytvořilo filmy Toy Story a Hledá se Nemo?', options: ["DreamWorks","Warner Bros. Animation","Pixar","Studio Ghibli"], correct: 2 },
+
+  // --- umeni ---
+  { id: 436, category: 'umeni',        question: 'Jak se nazývá umělecký styl přelomu 19. a 20. století s organickými tvary, typický pro architekturu i design?', options: ["Baroko","Secese (Art Nouveau)","Kubismus","Romantismus"], correct: 1 },
+  { id: 437, category: 'umeni',        question: 'Který český malíř je znám cyklem „Slovanská epopej"?', options: ["Josef Mánes","Mikoláš Aleš","Alfons Mucha","Jan Zrzavý"], correct: 2 },
+  { id: 438, category: 'umeni',        question: 'Co je to sonet?', options: ["Básnická forma o 14 verších","Druh symfonie o 4 větách","Typ operního zpěvu","Malířská technika suchým pastellem"], correct: 0 },
+  { id: 439, category: 'umeni',        question: 'Kdo složil „Symfonii č. 9 d moll" (Óda na radost)?', options: ["Wolfgang Amadeus Mozart","Franz Schubert","Ludwig van Beethoven","Johann Sebastian Bach"], correct: 2 },
+  { id: 440, category: 'umeni',        question: 'Která stavba v Praze je příkladem gotické architektury?', options: ["Národní divadlo","Chrám sv. Víta","Černínský palác","Stavovské divadlo"], correct: 1 },
+
+  // --- lidske_telo ---
+  { id: 441, category: 'lidske_telo',  question: 'Jak se nazývá část mozku zodpovědná za rovnováhu a koordinaci pohybů?', options: ["Mozková kůra","Mozeček","Mozkový kmen","Hypothalamus"], correct: 1 },
+  { id: 442, category: 'lidske_telo',  question: 'Jaká je funkce inzulínu v lidském těle?', options: ["Přenáší kyslík v krvi","Reguluje hladinu cukru v krvi","Chrání tělo před infekcemi","Řídí srdeční rytmus"], correct: 1 },
+  { id: 443, category: 'lidske_telo',  question: 'Jak se nazývá přenosný zápis elektrické aktivity srdce?', options: ["EEG","RTG","EKG","MRI"], correct: 2 },
+  { id: 444, category: 'lidske_telo',  question: 'Ve které části trávicí soustavy probíhá hlavní vstřebávání živin?', options: ["Žaludek","Tenké střevo","Tlusté střevo","Jícen"], correct: 1 },
+  { id: 445, category: 'lidske_telo',  question: 'Jak se nazývá děj, při kterém svaly produkují energii bez přístupu kyslíku?', options: ["Aerobní dýchání","Fotosyntéza","Anaerobní glykolýza","Osmóza"], correct: 2 }
 ];
 
 export function getByCategory(categoryKey) {
