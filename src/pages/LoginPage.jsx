@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 import { usePlayer } from '../context/PlayerContext'
@@ -11,10 +11,9 @@ export default function LoginPage() {
   const { player, savePlayer } = usePlayer()
   const navigate = useNavigate()
 
-  if (player) {
-    navigate('/home', { replace: true })
-    return null
-  }
+  useEffect(() => {
+    if (player) navigate('/home', { replace: true })
+  }, [player])
 
   async function handleSearch(e) {
     e.preventDefault()
