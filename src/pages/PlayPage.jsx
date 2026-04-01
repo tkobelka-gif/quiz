@@ -4,7 +4,7 @@ import { supabase } from '../lib/supabase'
 import { usePlayer } from '../context/PlayerContext'
 import { questions as allQuestions } from '../data/questions'
 
-const TIMER = 15
+const TIMER = 23
 const LETTERS = ['A', 'B', 'C', 'D']
 
 export default function PlayPage() {
