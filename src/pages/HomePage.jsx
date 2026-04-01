@@ -128,7 +128,9 @@ export default function HomePage() {
               {duels.map(duel => {
                 const isChallenger = duel.challenger_id === player.id
                 const other = isChallenger ? duel.opponent : duel.challenger
-                const myDone = isChallenger ? duel.challenger_score !== null : duel.opponent_score !== null
+                const myTurn = isChallenger
+                  ? duel.challenger_score === null
+                  : duel.challenger_score !== null && duel.opponent_score === null
 
                 return (
                   <div key={duel.id} className="bg-white rounded-xl px-4 py-3 shadow-sm flex items-center justify-between gap-2">
@@ -136,15 +138,15 @@ export default function HomePage() {
                       <p className="font-semibold text-gray-800 truncate">{other?.name}</p>
                       <p className="text-sm text-gray-500">{getCategoryLabel(duel.category)}</p>
                     </div>
-                    {myDone ? (
-                      <span className="text-gray-400 text-sm shrink-0">Čekám...</span>
-                    ) : (
+                    {myTurn ? (
                       <button
                         onClick={() => navigate(`/duel/${duel.id}/play`)}
                         className="bg-indigo-600 text-white text-sm font-semibold px-3 py-1.5 rounded-lg shrink-0"
                       >
                         Hrát →
                       </button>
+                    ) : (
+                      <span className="text-gray-400 text-sm shrink-0">Čekám...</span>
                     )}
                   </div>
                 )
