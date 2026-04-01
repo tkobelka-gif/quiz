@@ -27,19 +27,32 @@ export default function PlayPage() {
   useEffect(() => { loadDuel() }, [duelId])
 
   async function loadDuel() {
-    const { data: d } = await supabase.from('duels').select('*').eq('id', duelId).single()
-    if (!d) { navigate('/home', { replace: true }); return }
+    const { data: d, error: duelErr } = await supabase.from('duels').select('*').eq('id', duelId).single()
+    if (!d) {
+      console.error('[PlayPage] duel not found', duelErr)
+      navigate('/home', { replace: true })
+      return
+    }
     setDuel(d)
 
-    const { data: dq } = await supabase
+    const { data: dq, error: dqErr } = await supabase
       .from('duel_questions')
       .select('question_id, position')
       .eq('duel_id', duelId)
       .order('position')
 
-    if (!dq?.length) { navigate('/home', { replace: true }); return }
+    if (!dq?.length) {
+      console.error('[PlayPage] duel_questions not found', dqErr, 'duelId:', duelId)
+      navigate('/home', { replace: true })
+      return
+    }
 
     const questions = dq.map(row => allQuestions.find(q => q.id === row.question_id)).filter(Boolean)
+    if (!questions.length) {
+      console.error('[PlayPage] no matching questions in local data, dq:', dq)
+      navigate('/home', { replace: true })
+      return
+    }
     setQs(questions)
     setPhase('playing')
   }
